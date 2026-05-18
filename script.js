@@ -84,5 +84,10 @@ btnAdd.click(function () {
           .text(`${editDeadlineTask}`);
       }
   });
+
+  // Action for Trash Icon to Remove The Task
+  newList.on("click", ".fa-trash", function () {
+    $(newList).remove();
+  });
     
 });
