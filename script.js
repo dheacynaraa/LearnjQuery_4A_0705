@@ -39,8 +39,27 @@ btnAdd.click(function () {
             <i class="fas fa-trash"></i>
         </div>
   `);
-  
+
   // Add newList value to taskList
   taskList.append(newList);
+
+  // Action for Check Icon to Change The Status
+  newList.on("click", ".fa-check", function () {
+    $(this)
+      .closest("li")
+      .find(".status")
+      .text("Done")
+      .css("color", "green");
+
+    $(this)
+      .closest("li")
+      .find(".task")
+      .css("text-decoration", "line-through");  
+
+    $(this)
+      .closest("li")
+      .find(".deadline")
+      .css("text-decoration", "line-through");    
+  });
 
 });
