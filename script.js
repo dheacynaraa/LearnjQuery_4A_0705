@@ -89,5 +89,10 @@ btnAdd.click(function () {
   newList.on("click", ".fa-trash", function () {
     $(newList).remove();
   });
-    
+
+  // Action for Clear Button to Remove All Task
+  btnClear.click(function () {
+    $(taskList).remove();
+  }); 
+
 });
