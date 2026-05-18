@@ -1,0 +1,141 @@
+/* Card */
+.card {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #eef5fc;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: sans-serif;  
+  text-align: center;
+  color: #4338ca;
+}
+
+/* Form Input */
+.form {
+  display: flex;
+  gap: 8px;
+}
+
+input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  color: #292929;
+}
+
+#btnAdd {
+  padding: 10px 14px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#btnAdd:hover {
+  background: #4338ca;
+}
+
+/* Column */
+.column {
+  font-family: system-ui;  
+  color: #1547b3;  
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-left: 0.1rem;
+  max-width: 470px;
+  gap: 3rem;
+}
+
+/* Row Output */
+ul {
+  font-family: system-ui;
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+/* Left Text */
+.task-container {
+  background: #e1eefa;
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.task {
+  text-align: left;
+  font-weight: bold;
+  color: #3d3d3d;
+}
+
+.deadline {
+  text-align: center;
+  font-weight: bold;
+  color: #3d3d3d;
+}
+
+.status {
+  text-align: right;
+  color: rgb(252, 72, 72);
+  font-weight: bold;
+}
+
+/* Right Icon */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.actions i.fas.fa-check {
+  cursor: pointer;
+  color: #10b981;
+}
+
+.actions i.fas.fa-edit {
+  cursor: pointer;
+  color: #3b82f6;
+}
+
+.actions i.fas.fa-trash {
+  cursor: pointer;
+  color: #ef4444;
+}
+
+/* CLear Button */
+.clear {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  max-width: 590px;
+}
+
+#btnClear {
+  padding: 10px 15px;
+  background: #eb4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#btnClear:hover {
+  background: #d63838;
+}
