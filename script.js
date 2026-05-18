@@ -24,5 +24,23 @@ btnAdd.click(function () {
   inputTask.val("");
   
   let newList = $("<li>");
+
+  // Change newList Value
+  newList.html(`
+        <div class="task-container">
+            <div class="task">${textTask}</div>
+            <div class="deadline">${deadlineTask}</div>
+            <div class="status">On Progress</div>
+        </div>
+
+        <div class="actions">
+            <i class="fas fa-check"></i>
+            <i class="fas fa-edit"></i>
+            <i class="fas fa-trash"></i>
+        </div>
+  `);
   
+  // Add newList value to taskList
+  taskList.append(newList);
+
 });
