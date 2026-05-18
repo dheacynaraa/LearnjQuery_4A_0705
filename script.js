@@ -62,4 +62,27 @@ btnAdd.click(function () {
       .css("text-decoration", "line-through");    
   });
 
+  // Action for Edit Icon to Change The Task Tittle
+  newList.on("click", ".fa-edit", function () {
+      const editTextTask = prompt("Edit Task : ", textTask);
+      const editDeadlineTask = prompt("Deadline Task : ", deadlineTask);
+
+      if (
+        editTextTask !== null &&
+        editTextTask !== "" &&
+        editDeadlineTask !== null &&
+        editDeadlineTask !== ""
+      ) {
+        $(this)
+          .closest("li")
+          .find(".task")
+          .text(`${editTextTask}`);
+
+        $(this)
+          .closest("li")
+          .find(".deadline")
+          .text(`${editDeadlineTask}`);
+      }
+  });
+    
 });
